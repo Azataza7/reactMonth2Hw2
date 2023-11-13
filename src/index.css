@@ -67,3 +67,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.modal-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  background: url("././public/close-btn.svg") center center no-repeat;
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  right: 6px;
+}
