@@ -47,9 +47,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -74,9 +72,22 @@ button:focus-visible {
 
 .close-btn {
   position: absolute;
-  background: url("././public/close-btn.svg") center center no-repeat;
+  background: url("../close-btn.svg") center center no-repeat;
   width: 40px;
   height: 40px;
   top: 6px;
   right: 6px;
+}
+
+.alert {
+  width: 300px;
+}
+
+.alert-btn {
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.alert-btn:hover {
+  background-color: red;
 }
