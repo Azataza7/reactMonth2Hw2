@@ -1,7 +1,12 @@
 import React from 'react';
 
+interface Props {
+  onDismiss: () => void;
+  type: string;
+  children: React.ReactNode
+}
 
-const Alert = ({type, onDismiss, children}) => {
+const Alert: React.FC<Props> = ({type, onDismiss, children}) => {
   return (
     <div className={`alert alert-${type}`}>
       {children}

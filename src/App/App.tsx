@@ -5,7 +5,7 @@ import Alert from '../Components/Alert/Alert';
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
-  const [showAlert, setShowAlert] = useState(true)
+  const [showAlert, setShowAlert] = useState(true);
 
   const onClose = (on) => on ? setShowModal(true) : setShowModal(false);
   const closeAlert = () => setShowAlert(false);
@@ -30,7 +30,7 @@ const App = () => {
         <Alert type="warning" onDismiss={closeAlert}>
           This is a warning type alert
         </Alert>
-        <Alert type="success">This is a success type alert</Alert>
+        <Alert type="success" >This is a success type alert</Alert>
       </div>
     </>
   );
